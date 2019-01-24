@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/Layout :: head">
+<title>Formulario Cafe</title>
+</head>
+<body>
+<header th:replace="layout/layout :: header"></header>
+	<div class="container py-4">
+	
+	<div class="card " id="cardCafe">
+	<div class="card-header text-center">
+				<h3>Registar Cafe</h3>
+			</div>
+	<div class="card-body">
+	
+	<form action="#"  th:action="@{/AgregarCafe/}+${idFinca}" method="post">
+			<div class="form-group row">
+				<label for="apellido" class="col-sm-3 col-form-label">Nombre del Cafe</label>
+			<div>
+			 <input type="text" th:field="*{tipoCafe.nombreTipo}" id="
++" class="form-control" />
+			</div>
+			</div>
+			<div>
+				<input type="submit" value="Guardar" class="btn btn-secondary" />
+			</div>
+		</form>
+	</div>
+	</div>
+	
+	</div>
+</body>
+</html>
+
+		
