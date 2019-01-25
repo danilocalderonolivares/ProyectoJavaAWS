@@ -32,7 +32,7 @@ public class ProductorController {
 	@Autowired
 	FincaRepository fincaRepository;
 
-	@GetMapping("/index")
+	@GetMapping("/")
 	public String Index(Model model) {
 		model.addAttribute("Titulo", "Productor");
 		model.addAttribute("productor", new Productor());
